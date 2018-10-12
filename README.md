@@ -1,6 +1,6 @@
 # Notist listings
 
-An example of using [Notist](https://notist.com)'s JSON feed to populate a listing of your events on your own, pre-rendered site.
+An example of using [Notist](https://noti.st)'s JSON feed to populate a listing of your events on your own, pre-rendered site.
 
 
 ## Quick start
