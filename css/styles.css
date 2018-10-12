@@ -2,7 +2,7 @@ $feather: #eee;
 $bodytext: #444;
 $gentletext: #888;
 $verygentletext: #888;
-$heavytext: #111;
+$heavytext: #222;
 $pagecolor: #fff;
 
 
@@ -17,6 +17,7 @@ body {
   color: $bodytext;
   font-size: 16px;
   line-height: 1.6;
+  background-color: $pagecolor;
 }
 
 @media (min-width: 800px) {
@@ -27,7 +28,7 @@ body {
 
 a:link,
 a:visited {
-  color: #222;
+  color: $heavytext;
 }
 
 header,
@@ -45,7 +46,6 @@ footer {
   margin-top: 6em;
   border-top: solid 1px $feather;
 }
-
 
 .container {
   width: 90%;
@@ -65,9 +65,7 @@ hr {
   margin-top: 2em;
   margin-bottom: 3em;
 }
-.post-content img {
-  width: 100%;
-}
+
 
 p.meta {
   color: $bodytext;
@@ -93,7 +91,7 @@ ul.listing {
 }
 
 
-h1,h2,h3,h4 {
+h1,h2,h3 {
   font-family: sans-serif;
   line-height: 1.1;
   color: $heavytext;
@@ -111,38 +109,4 @@ h2 {
 
 h3 {
   margin-top: 2em;
-}
-
-figure {
-  margin-left: 0;
-  margin-right: 0;
-}
-figcaption {
-  text-align: center;
-  color: $verygentletext;
-  font-size: 0.7em;
-}
-
-blockquote {
-  font-style: italic;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: -2em;
-  padding-left: 2em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  border-left: solid 3px $gentletext;
-  em {
-    font-style: normal;
-  }
-}
-
-pre {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 1em;
-  padding-right: 1em;
-  background-color: $feather;
-  font-size: 0.7em;
-  overflow-x: scroll;
 }

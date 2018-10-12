@@ -1,24 +1,35 @@
 ---
 layout: layouts/base.njk
-title: Articles from Medium
 ---
 
-<h1>Medium to Small JAMstack</h1>
+<h1>Event listing from Notist</h1>
 <p>
-  A little while after <a href="https://help.medium.com/hc/en-us/articles/115003053487-Custom-Domains-service-deprecation">Medium announced</a> that they would be discontinuing support for custom domains, <a href="https://twitter.com/dhh/status/1037398155879309312">some have been considering reclaiming their content</a> and publishing on their own sites.
+  <a href="https://notist.com">Notist</a> is a lovely site for collecting and sharing your presentations. You can list events that are coming up, and capture coverage of your talks to share it along with your slides and other resources.
 </p>
 <p>
-  This site gets content from <a href="https://help.medium.com/hc/en-us/articles/214874118-RSS-feeds">Medium's RSS Feeds</a> and serves the articles in a pre-rendered site which you can control and host for yourself. You can configure and <a href="/get-yours">deploy your own</a> for free on Netlify with a couple of clicks.
+  One of the lovely things about Notist is that exposes a lot of its content as JSON feeds. This site is an example of how you can use these feeds to populate content on your own website.
 </p>
 
 <hr/>
 
-<h2>Articles <small>(sourced from {{ medium.url }})</small></h2>
+<h2>Upcoming events <small>(sourced from {{ notist.url }})</small></h2>
 <ul class="listing">
-{% for item in medium.posts %}
+{% for item in notist.events.future %}
   <li>
-    <p class="meta">Published on {{ item.pubDate | date }} by {{ item['dc:creator'] }}</p>
-    <h3><a href="/posts/{{ item.path }}">{{ item.title }}</a></h3>
+    <p class="meta">{{ item.starts_on | date }} in {{ item.address }}</p>
+    <h3><a href="{{ item.url }}" target="NEW" rel="noopener">{{ item.title }}</a></h3>
+  </li>
+ {% endfor %}
+</ul>
+
+<hr/>
+
+<h2>Previous events <small>(sourced from {{ notist.url }})</small></h2>
+<ul class="listing">
+{% for item in notist.events.past %}
+  <li>
+    <p class="meta">{{ item.starts_on | date }} in {{ item.address }}</p>
+    <h3><a href="{{ item.url }}" target="NEW" rel="noopener">{{ item.title }}</a></h3>
   </li>
  {% endfor %}
 </ul>
