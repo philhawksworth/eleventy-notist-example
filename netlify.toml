@@ -3,4 +3,4 @@
   publish = "dist"
 
 [template.environment]
-  MEDIUM_FEED = "The URL of the Medium feed to pull in"
+  NOTIST_FEED = "The URL of the Notist feed to pull in"

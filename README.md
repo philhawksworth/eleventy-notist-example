@@ -7,7 +7,7 @@ An example of using [Notist](https://notist.com)'s JSON feed to populate a listi
 
 You can get your own version of this site by just clicking the button below, and then providing a suitable Medium RSS feed URL.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/philhawksworth/medium-export)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/philhawksworth/eleventy-notist-example)
 
 
 ## Description
@@ -37,7 +37,7 @@ The whole thing should take less than a minute!
 
 ## Local development
 
-This site is built with [Eleventy](https://11ty.io) and have very few prerequisites:
+This site is built with [Eleventy](https://11ty.io) and has very few prerequisites:
 
 - Node
 - Npm or Yarn
