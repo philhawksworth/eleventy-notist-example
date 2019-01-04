@@ -3,13 +3,6 @@
 An example of using [Notist](https://noti.st)'s JSON feed to populate a listing of your events on your own, pre-rendered site.
 
 
-## Quick start
-
-You can get your own version of this site by just clicking the button below, and then providing a suitable Medium RSS feed URL.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/philhawksworth/eleventy-notist-example)
-
-
 ## Description
 
 Here we are pre-rendering the site with a static site generator called <a href="https://11ty.io">Eleventy</a> and serving the content that it finds at a given JSON feed.
